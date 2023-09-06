@@ -1,4 +1,7 @@
 /** @type {import('tailwindcss').Config} */
+
+const colors = require('tailwindcss/colors');
+
 module.exports = {
   content: [
     "./src/**/*.{html,ts}"
@@ -16,7 +19,11 @@ module.exports = {
         200: '#2B2D31',
         300: '#232428',
         400: '#1E1F22',
-      }
+      },
+      neutral: colors.neutral,
+      red: colors.red,
+      yellow: colors.yellow,
+      sky: colors.sky,
     }
   },
   plugins: [],
