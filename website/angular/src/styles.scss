@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .btn-link {
+    @apply text-sky-500 hover:underline;
+  }
+}
