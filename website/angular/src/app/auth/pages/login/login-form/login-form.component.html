@@ -1,49 +1,40 @@
-<section>
-  <h1 class="text-2xl font-medium text-center mb-2">Welcome back!</h1>
-  <p class="text-sm text-center text-neutral-400 mb-5">
-    We're so excited to see you again!
-  </p>
-
-  <form>
-    <div class="form-input">
-      <label
-        for="login-email"
-        class="text-xs font-bold uppercase text-neutral-400"
-        >Email <span class="text-red-500">*</span></label
-      >
-      <input
-        type="email"
-        id="login-email"
-        class="block w-full bg-neutral-900 rounded-sm p-2 my-2 mb-4"
-      />
-    </div>
-
-    <div class="form-input">
-      <label
-        for="login-password"
-        class="text-xs font-bold uppercase text-neutral-400"
-        >Password <span class="text-red-500">*</span></label
-      >
-      <input
-        type="password"
-        id="login-password"
-        class="block w-full bg-neutral-900 rounded-sm p-2 my-2"
-      />
-    </div>
-
-    <a href="#" class="block text-sm text-sky-500 hover:underline mb-5">
-      Forgot your password?
-    </a>
-
-    <button
-      class="w-full p-3 mb-4 rounded-sm bg-primary text-sm text-white hover:bg-primary"
+<form>
+  <div class="form-input">
+    <label
+      for="login-email"
+      class="text-xs font-bold uppercase text-neutral-400"
+      >Email <span class="text-red-500">*</span></label
     >
-      Log In
-    </button>
+    <input
+      type="email"
+      id="login-email"
+      class="block w-full bg-neutral-900 rounded-sm p-2 my-2 mb-4"
+    />
+  </div>
 
-    <p class="text-sm text-neutral-400">
-      Need an account?
-      <a href="#" class="text-sky-500 hover:underline">Register</a>
-    </p>
-  </form>
-</section>
+  <div class="form-input">
+    <label
+      for="login-password"
+      class="text-xs font-bold uppercase text-neutral-400"
+      >Password <span class="text-red-500">*</span></label
+    >
+    <input
+      type="password"
+      id="login-password"
+      class="block w-full bg-neutral-900 rounded-sm p-2 my-2"
+    />
+  </div>
+
+  <a href="#" class="block text-sm btn-link mb-5"> Forgot your password? </a>
+
+  <button
+    class="w-full p-3 mb-4 rounded-sm bg-primary text-sm text-white hover:bg-primary"
+  >
+    Log In
+  </button>
+
+  <p class="text-sm text-neutral-400">
+    Need an account?
+    <a routerLink="/auth/register" class="btn-link">Register</a>
+  </p>
+</form>
